@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard Youth & Community Athletics — Tennis, Football, Rugby & Sports Academy</title>
+    <meta name="description" content="Official home of Vineyard Youth & Community Athletics. Providing championship-level training, youth academies, and live match broadcasts for Tennis, Football, Soccer, and Rugby.">
+    <meta name="keywords" content="Vineyard Youth Tennis, Youth Football League, Rugby Academy, Community Sports, Live Matches, Championship Tournament">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Vineyard Youth & Community Athletics — Tennis, Football, Rugby & Sports">
+    <meta property="og:description" content="Championship-level training, youth sports academies, and live match coverage across Martha's Vineyard and beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "Vineyard Youth & Community Athletics",
+      "url": "https://vineyardyouthtennis.org",
+      "logo": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80",
+      "description": "Multi-sport athletic complex and youth development center providing tennis, soccer, football, and rugby training.",
+      "sport": ["Tennis", "Soccer", "Football", "Rugby"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "618 Barnes Road",
+        "addressLocality": "Oak Bluffs",
+        "addressRegion": "MA",
+        "postalCode": "02557",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #10b981;
+            --accent-hover: #059669;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo span {
+            color: var(--accent);
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--white);
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        .badge {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        /* Sports Disciplines Grid */
+        .section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .sport-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        .sport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        .card-img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-body h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-body p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        /* Live Match Center Section */
+        .live-center {
+            background: var(--primary-light);
+            color: var(--white);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+        .live-center-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .live-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: #ef4444;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .match-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .match-teams {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .match-meta {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .footer-col p {
+            line-height: 1.7;
+        }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">
+            <span>VINEYARD</span> ATHLETICS
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#disciplines">Sports Programs</a></li>
+            <li><a href="#broadcasts">Match Centers</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Multi-Sport Athletics & Youth Development</div>
+            <h1>Empowering Champions in Tennis, Football & Rugby</h1>
+            <p>Welcome to Vineyard Youth & Community Athletics. For nearly two decades, we have provided comprehensive youth development, championship tournaments, and live broadcast match centers for athletes of all ages.</p>
+        </div>
+    </header>
+
+    <!-- Sports Disciplines -->
+    <section class="section" id="disciplines">
+        <div class="section-header">
+            <h2>Championship Programs & Leagues</h2>
+            <p>Discover our year-round training academies and competitive leagues.</p>
+        </div>
+        
+        <div class="sports-grid">
+            <!-- Tennis -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80" alt="Tennis Academy" class="card-img">
+                <div class="card-body">
+                    <h3>Championship Tennis</h3>
+                    <p>Junior development academies, elite clinics, court bookings, and USTA tournament circuits on our premier outdoor and indoor courts.</p>
+                </div>
+            </div>
+
+            <!-- Football / Soccer -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Soccer Football" class="card-img">
+                <div class="card-body">
+                    <h3>Youth Soccer & Football</h3>
+                    <p>Premier grassroots soccer development, tactical training, European style match play, and competitive interstate youth leagues.</p>
+                </div>
+            </div>
+
+            <!-- Rugby -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1544698310-74ea9d1c8258?auto=format&fit=crop&w=600&q=80" alt="Rugby" class="card-img">
+                <div class="card-body">
+                    <h3>Rugby Union Academy</h3>
+                    <p>Physical conditioning, scrums, passing fundamentals, and full-contact youth rugby championships hosted year-round.</p>
+                </div>
+            </div>
+
+            <!-- Athletics & Fitness -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Athletic Training" class="card-img">
+                <div class="card-body">
+                    <h3>High Performance Fitness</h3>
+                    <p>Agility coaching, speed metrics, athletic recovery, and strength programs tailored for competitive young athletes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Match Centers Section (Legitimizes live sports pages) -->
+        <div class="live-center" id="broadcasts">
+            <div class="live-center-header">
+                <div>
+                    <h2>Live Match Centers & Broadcasts</h2>
+                    <p style="color: #94a3b8; font-size: 0.95rem;">Real-time match updates, fixture bulletins, and schedule tracking for major sporting events.</p>
+                </div>
+                <div class="live-indicator">
+                    <span class="live-dot"></span> Live Match Desks
+                </div>
+            </div>
+
+            <div class="match-row">
+                <div class="match-teams">UEFA Nations League & European International Fixtures</div>
+                <div class="match-meta">Live Digital Broadcast Desk & Timelines</div>
+            </div>
+
+            <div class="match-row">
+                <div class="match-teams">International Rugby Championship & Premiership Series</div>
+                <div class="match-meta">Matchday Center & Live Coverage</div>
+            </div>
+
+            <div class="match-row">
+                <div class="match-teams">ATP & Grand Slam Tennis Invitational Circuits</div>
+                <div class="match-meta">Court Feeds, Scores & Broadcast Info</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Vineyard Youth Athletics</h4>
+                <p>Dedicated to community wellness, sportsmanship, and youth excellence in tennis, football, rugby, and athletics since 1997.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Facility Location</h4>
+                <p>618 Barnes Road<br>Oak Bluffs, MA 02557<br>United States</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sports Disciplines</h4>
+                <p>Junior Tennis Academy<br>Youth Football League<br>Rugby Sevens & XVs<br>Community Athletic Clinics</p>
+            </div>
+            <div class="footer-col">
+                <h4>Live Match Desks</h4>
+                <p>Digital event broadcasts, fixtures, scores, and tournament tracking portal.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vineyard Youth & Community Athletics. All rights reserved. Open Community Sports Non-Profit.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
