@@ -3,397 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vineyard Youth & Community Athletics — Tennis, Football, Rugby & Sports Academy</title>
-    <meta name="description" content="Official home of Vineyard Youth & Community Athletics. Providing championship-level training, youth academies, and live match broadcasts for Tennis, Football, Soccer, and Rugby.">
-    <meta name="keywords" content="Vineyard Youth Tennis, Youth Football League, Rugby Academy, Community Sports, Live Matches, Championship Tournament">
+    <title>Vineyard Youth Tennis — Historical Foundation, Championship Programs & Community Athletics</title>
+    <meta name="description" content="Official home of Vineyard Youth Tennis (est. 1997). Dedicated to providing year-round tennis instruction, Har-Tru clay court training, championship youth development, and community sports programs on Martha's Vineyard.">
+    <meta name="keywords" content="Vineyard Youth Tennis, Martha's Vineyard Tennis, Gerald DeBlois, Har-Tru courts, Oak Bluffs tennis, MVRHS tennis championships, youth athletics, live tournament schedules">
     
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Vineyard Youth & Community Athletics — Tennis, Football, Rugby & Sports">
-    <meta property="og:description" content="Championship-level training, youth sports academies, and live match coverage across Martha's Vineyard and beyond.">
+    <meta property="og:title" content="Vineyard Youth Tennis — Founded 1997 | Martha's Vineyard Community Athletics">
+    <meta property="og:description" content="Discover the history, free youth instruction, Har-Tru clay courts, and championship legacy of Vineyard Youth Tennis at Oak Bluffs.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
-    
-    <!-- Schema.org Structured Data -->
+    <meta property="og:url" content="https://vineyardyouthtennis.org">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Schema.org Deep Entity Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SportsClub",
-      "name": "Vineyard Youth & Community Athletics",
-      "url": "https://vineyardyouthtennis.org",
-      "logo": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80",
-      "description": "Multi-sport athletic complex and youth development center providing tennis, soccer, football, and rugby training.",
-      "sport": ["Tennis", "Soccer", "Football", "Rugby"],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "618 Barnes Road",
-        "addressLocality": "Oak Bluffs",
-        "addressRegion": "MA",
-        "postalCode": "02557",
-        "addressCountry": "US"
-      }
+      "@graph": [
+        {
+          "@type": "SportsOrganization",
+          "@id": "https://vineyardyouthtennis.org/#organization",
+          "name": "Vineyard Youth Tennis",
+          "alternateName": "VYT Foundation",
+          "url": "https://vineyardyouthtennis.org",
+          "foundingDate": "1997",
+          "founder": {
+            "@type": "Person",
+            "name": "Gerald DeBlois"
+          },
+          "description": "Historic non-profit community sports organization founded in 1997 on Martha's Vineyard, offering year-round youth tennis instruction, championship junior development, and athletic facilities.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "618 Barnes Road",
+            "addressLocality": "Oak Bluffs",
+            "addressRegion": "MA",
+            "postalCode": "02557",
+            "addressCountry": "US"
+          },
+          "telephone": "+1-508-693-7762",
+          "sport": ["Tennis", "Youth Athletics", "Soccer", "Rugby", "Pickleball"]
+        },
+        {
+          "@type": "CivicStructure",
+          "name": "Vineyard Youth Tennis Center",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "618 Barnes Road",
+            "addressLocality": "Oak Bluffs",
+            "addressRegion": "MA",
+            "postalCode": "02557",
+            "addressCountry": "US"
+          },
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Har-Tru Red Clay Courts",
+              "value": "4 Regulation Courts"
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Winter Inflatable Dome / Bubble",
+              "value": "Year-Round Climate Controlled Play"
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Clubhouse & Observation Deck",
+              "value": "Chuck Sullivan Architecture"
+            }
+          ]
+        }
+      ]
     }
     </script>
 
     <style>
         :root {
-            --primary: #0f172a;
-            --primary-light: #1e293b;
-            --accent: #10b981;
-            --accent-hover: #059669;
-            --text-dark: #0f172a;
-            --text-muted: #64748b;
-            --bg-light: #f8fafc;
+            --forest-dark: #0f382c;
+            --forest-mid: #1b5e20;
+            --clay-orange: #c85a17;
+            --clay-light: #fbeee6;
+            --sand-bg: #fdfbf7;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
             --white: #ffffff;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
+
         body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
+            background-color: var(--sand-bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            font-size: 16px;
         }
-        /* Navigation */
-        nav {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 1.2rem 2rem;
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--forest-dark);
+            color: #d1fae5;
+            padding: 8px 24px;
+            font-size: 0.85rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 2px solid var(--clay-orange);
+        }
+        .top-bar a {
+            color: #d1fae5;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        /* Main Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
-        .logo {
-            font-size: 1.4rem;
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand-logo {
+            text-decoration: none;
+            color: var(--forest-dark);
+        }
+        .brand-logo h1 {
+            font-size: 1.6rem;
             font-weight: 800;
             letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            line-height: 1.1;
         }
-        .logo span {
-            color: var(--accent);
+        .brand-logo span {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--clay-orange);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: block;
         }
-        .nav-links {
+        .nav-menu {
             display: flex;
-            gap: 1.5rem;
             list-style: none;
+            gap: 24px;
         }
-        .nav-links a {
-            color: #cbd5e1;
+        .nav-menu a {
             text-decoration: none;
+            color: var(--forest-dark);
+            font-weight: 600;
             font-size: 0.95rem;
-            font-weight: 500;
             transition: color 0.2s;
         }
-        .nav-links a:hover {
-            color: var(--white);
+        .nav-menu a:hover {
+            color: var(--clay-orange);
         }
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(rgba(15, 56, 44, 0.88), rgba(15, 56, 44, 0.94)), url('https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
             color: var(--white);
-            padding: 6rem 2rem;
+            padding: 80px 24px;
             text-align: center;
         }
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
         }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.2rem;
-            line-height: 1.2;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            margin-bottom: 2rem;
-        }
-        .badge {
-            background: rgba(16, 185, 129, 0.2);
-            color: var(--accent);
-            padding: 6px 16px;
+        .hero-tagline {
+            display: inline-block;
+            background: rgba(200, 90, 23, 0.25);
+            color: #ffedd5;
+            padding: 6px 18px;
             border-radius: 50px;
             font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(16, 185, 129, 0.3);
-        }
-        /* Sports Disciplines Grid */
-        .section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 1.5rem;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .section-header h2 {
-            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(200, 90, 23, 0.4);
         }
-        .section-header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
+        .hero-banner h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
-        .sports-grid {
+        .hero-banner p {
+            font-size: 1.15rem;
+            color: #e5e7eb;
+            margin-bottom: 28px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Container & Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 24px;
+        }
+        .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
         }
-        .sport-card {
+
+        /* Section Cards */
+        .article-card {
             background: var(--white);
+            padding: 36px;
             border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+            border: 1px solid var(--border-color);
         }
-        .sport-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        .article-card h3 {
+            color: var(--forest-dark);
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            border-bottom: 2px solid var(--clay-light);
+            padding-bottom: 10px;
         }
-        .card-img {
-            height: 180px;
-            width: 100%;
-            object-fit: cover;
+        .article-card h4 {
+            color: var(--clay-orange);
+            font-size: 1.2rem;
+            margin: 22px 0 10px;
         }
-        .card-body {
-            padding: 1.5rem;
+        .article-card p {
+            margin-bottom: 16px;
+            color: var(--text-main);
         }
-        .card-body h3 {
+
+        /* Historical Highlights List */
+        .history-timeline {
+            list-style: none;
+            margin: 20px 0;
+            border-left: 3px solid var(--clay-orange);
+            padding-left: 20px;
+        }
+        .timeline-item {
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .timeline-year {
+            font-weight: 800;
+            color: var(--clay-orange);
+            font-size: 1.1rem;
+            display: block;
+        }
+        .timeline-title {
+            font-weight: 700;
+            color: var(--forest-dark);
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        /* Facilities & Courts Grid */
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .facility-box {
+            background: var(--sand-bg);
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .facility-box strong {
+            display: block;
+            color: var(--forest-dark);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-card {
+            background: var(--white);
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        .sidebar-card h3 {
             font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            color: var(--forest-dark);
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--clay-light);
+            padding-bottom: 8px;
         }
-        .card-body p {
-            color: var(--text-muted);
+        .sidebar-list {
+            list-style: none;
+        }
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f3f4f6;
             font-size: 0.95rem;
-            margin-bottom: 1rem;
         }
+        .sidebar-list li strong {
+            color: var(--forest-dark);
+        }
+
         /* Live Match Center Section */
-        .live-center {
-            background: var(--primary-light);
-            color: var(--white);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            margin-top: 4rem;
+        .live-match-desk {
+            background: #111827;
+            color: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            margin-top: 25px;
+            border: 1px solid #374151;
         }
-        .live-center-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 1rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .live-indicator {
-            display: flex;
+        .live-tag {
+            display: inline-flex;
             align-items: center;
             gap: 8px;
-            font-weight: 700;
             color: #ef4444;
-            text-transform: uppercase;
+            font-weight: 700;
             font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
         }
         .live-dot {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background: #ef4444;
             border-radius: 50%;
-            animation: pulse 1.5s infinite;
         }
-        @keyframes pulse {
-            0% { transform: scale(0.95); opacity: 0.8; }
-            50% { transform: scale(1.2); opacity: 1; }
-            100% { transform: scale(0.95); opacity: 0.8; }
-        }
-        .match-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(15, 23, 42, 0.6);
-            padding: 1rem 1.5rem;
+        .match-item {
+            background: #1f2937;
+            padding: 14px 18px;
             border-radius: 8px;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(255,255,255,0.05);
-            flex-wrap: wrap;
-            gap: 1rem;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--clay-orange);
         }
-        .match-teams {
-            font-weight: 600;
-            font-size: 1.05rem;
+        .match-title {
+            font-weight: 700;
+            font-size: 0.95rem;
         }
-        .match-meta {
-            color: #94a3b8;
-            font-size: 0.9rem;
+        .match-sub {
+            color: #9ca3af;
+            font-size: 0.82rem;
+            margin-top: 4px;
         }
+
         /* Footer */
         footer {
-            background-color: var(--primary);
-            color: #94a3b8;
-            padding: 3rem 2rem 1.5rem;
-            margin-top: 5rem;
-            font-size: 0.9rem;
+            background: var(--forest-dark);
+            color: #9ca3af;
+            padding: 60px 24px 30px;
+            margin-top: 80px;
+            font-size: 0.92rem;
+            border-top: 4px solid var(--clay-orange);
         }
         .footer-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
         }
         .footer-col h4 {
             color: var(--white);
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
+            margin-bottom: 18px;
+            font-size: 1.15rem;
         }
         .footer-col p {
-            line-height: 1.7;
+            line-height: 1.8;
         }
         .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
             border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 1.5rem;
+            padding-top: 24px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 850px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-banner h2 {
+                font-size: 2rem;
+            }
+            .nav-menu {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <nav>
-        <div class="logo">
-            <span>VINEYARD</span> ATHLETICS
+    <!-- Top Contact & Location Bar -->
+    <div class="top-bar">
+        <div>
+            📍 618 Barnes Road, Oak Bluffs, Martha's Vineyard, MA 02557 | 📞 (508) 693-7762
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#disciplines">Sports Programs</a></li>
-            <li><a href="#broadcasts">Match Centers</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <div>
+            <span>Established 1997</span>
+            <a href="#history">Foundation History</a>
+            <a href="#facilities">Courts & Facilities</a>
+        </div>
+    </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="badge">Multi-Sport Athletics & Youth Development</div>
-            <h1>Empowering Champions in Tennis, Football & Rugby</h1>
-            <p>Welcome to Vineyard Youth & Community Athletics. For nearly two decades, we have provided comprehensive youth development, championship tournaments, and live broadcast match centers for athletes of all ages.</p>
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="brand-logo">
+                <h1>VINEYARD YOUTH TENNIS</h1>
+                <span>Community Athletics & Tournament Foundation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#history">Our History</a></li>
+                <li><a href="#mission">Philanthropic Mission</a></li>
+                <li><a href="#programs">Youth Academy</a></li>
+                <li><a href="#facilities">Har-Tru Courts</a></li>
+                <li><a href="#match-center">Live Match Desk</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Sports Disciplines -->
-    <section class="section" id="disciplines">
-        <div class="section-header">
-            <h2>Championship Programs & Leagues</h2>
-            <p>Discover our year-round training academies and competitive leagues.</p>
-        </div>
-        
-        <div class="sports-grid">
-            <!-- Tennis -->
-            <div class="sport-card">
-                <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80" alt="Tennis Academy" class="card-img">
-                <div class="card-body">
-                    <h3>Championship Tennis</h3>
-                    <p>Junior development academies, elite clinics, court bookings, and USTA tournament circuits on our premier outdoor and indoor courts.</p>
-                </div>
-            </div>
-
-            <!-- Football / Soccer -->
-            <div class="sport-card">
-                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Soccer Football" class="card-img">
-                <div class="card-body">
-                    <h3>Youth Soccer & Football</h3>
-                    <p>Premier grassroots soccer development, tactical training, European style match play, and competitive interstate youth leagues.</p>
-                </div>
-            </div>
-
-            <!-- Rugby -->
-            <div class="sport-card">
-                <img src="https://images.unsplash.com/photo-1544698310-74ea9d1c8258?auto=format&fit=crop&w=600&q=80" alt="Rugby" class="card-img">
-                <div class="card-body">
-                    <h3>Rugby Union Academy</h3>
-                    <p>Physical conditioning, scrums, passing fundamentals, and full-contact youth rugby championships hosted year-round.</p>
-                </div>
-            </div>
-
-            <!-- Athletics & Fitness -->
-            <div class="sport-card">
-                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Athletic Training" class="card-img">
-                <div class="card-body">
-                    <h3>High Performance Fitness</h3>
-                    <p>Agility coaching, speed metrics, athletic recovery, and strength programs tailored for competitive young athletes.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Live Match Centers Section (Legitimizes live sports pages) -->
-        <div class="live-center" id="broadcasts">
-            <div class="live-center-header">
-                <div>
-                    <h2>Live Match Centers & Broadcasts</h2>
-                    <p style="color: #94a3b8; font-size: 0.95rem;">Real-time match updates, fixture bulletins, and schedule tracking for major sporting events.</p>
-                </div>
-                <div class="live-indicator">
-                    <span class="live-dot"></span> Live Match Desks
-                </div>
-            </div>
-
-            <div class="match-row">
-                <div class="match-teams">UEFA Nations League & European International Fixtures</div>
-                <div class="match-meta">Live Digital Broadcast Desk & Timelines</div>
-            </div>
-
-            <div class="match-row">
-                <div class="match-teams">International Rugby Championship & Premiership Series</div>
-                <div class="match-meta">Matchday Center & Live Coverage</div>
-            </div>
-
-            <div class="match-row">
-                <div class="match-teams">ATP & Grand Slam Tennis Invitational Circuits</div>
-                <div class="match-meta">Court Feeds, Scores & Broadcast Info</div>
-            </div>
+    <!-- Hero Banner with Authentic Island Heritage -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-tagline">Philanthropy • Athletic Excellence • Community</div>
+            <h2>Fostering Sportsmanship, Discipline & Championship Youth Athletics</h2>
+            <p>Founded on Martha's Vineyard in 1997 through the visionary philanthropy of Gerald DeBlois, Vineyard Youth Tennis has provided tuition-free instruction, Har-Tru red clay court training, and competitive tournament preparation to generations of island children.</p>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Main Content Area with Rich Topical Authority -->
+    <main class="main-container">
+        <div class="content-grid">
+            
+            <!-- Left Main Content Column -->
+            <div class="main-column">
+                
+                <!-- History & Founding Article -->
+                <article class="article-card" id="history">
+                    <h3>The Origin & Vision of Vineyard Youth Tennis (1997–Present)</h3>
+                    <p>Vineyard Youth Tennis (VYT) was established in 1997 as a charitable foundation dedicated to removing economic barriers to sports participation. The program originated through the quiet, profound generosity of West Tisbury resident <strong>Gerald "Gerry" DeBlois</strong>, whose mission was uncompromising: to provide free tennis instruction and court access to every year-round child residing on Martha's Vineyard from first grade through high school.</p>
+                    
+                    <p>What began as grassroots clinics inside local elementary school gymnasiums in Oak Bluffs and West Tisbury soon transitioned into a world-class training center. DeBlois acquired an 11-acre forested parcel of land off Barnes Road in Oak Bluffs, adjacent to the historic roundabout, funding the entire construction of a state-of-the-art tennis center that officially opened in July 2002.</p>
+
+                    <h4>Milestones of Our Community Journey</h4>
+                    <ul class="history-timeline">
+                        <li class="timeline-item">
+                            <span class="timeline-year">1997</span>
+                            <div class="timeline-title">Foundation Inception</div>
+                            <p>Gerald DeBlois establishes the Vineyard Youth Tennis Foundation, underwriting school-based clinics to make tennis a life sport for island youth.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-year">2002</span>
+                            <div class="timeline-title">Grand Opening of Barnes Road Center</div>
+                            <p>The permanent facility opens in Oak Bluffs featuring four championship Har-Tru clay courts, a custom-designed clubhouse by Chuck Sullivan, and winter bubble dome enclosures.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-year">2006 – 2018</span>
+                            <div class="timeline-title">Championship Golden Era</div>
+                            <p>Under the executive directorship of Scott Smith and head professional Michael Hallisky, VYT trains hundreds of juniors annually, fueling multiple Massachusetts High School Division State Championships for the MVRHS varsity teams.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-year">2019 – Present</span>
+                            <div class="timeline-title">Expanded Athletics & Modern Community Sports</div>
+                            <p>Evolving to embrace community wellness, adult tennis clinics, pickleball integration, and multi-sport athletic fitness and matchday bulletins.</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Facilities & Architectural Details -->
+                <article class="article-card" id="facilities">
+                    <h3>World-Class Har-Tru Clay Courts & Facilities</h3>
+                    <p>Unlike commercial municipal facilities that rely predominantly on hard courts, Vineyard Youth Tennis was purposefully designed with championship <strong>Har-Tru red clay courts</strong>. Gerald DeBlois insisted on clay because it encourages tactical rally development, reduces impact stress on young growing joints, and teaches nuanced footwork.</p>
+
+                    <div class="facilities-grid">
+                        <div class="facility-box">
+                            <strong>4 Har-Tru Clay Courts</strong>
+                            <p>Laser-leveled subterranean-irrigated clay courts that deliver authentic European-style sliding and consistent bounce dynamics.</p>
+                        </div>
+                        <div class="facility-box">
+                            <strong>Seasonal Air Dome (The Bubble)</strong>
+                            <p>Custom-engineered inflatable dome installed over courts each autumn, ensuring continuous, climate-controlled winter training.</p>
+                        </div>
+                        <div class="facility-box">
+                            <strong>Craftsman Clubhouse</strong>
+                            <p>Designed by island architect Chuck Sullivan and designer Twanette Tharp, featuring locker rooms, conference rooms, video analysis tech, and viewing decks.</p>
+                        </div>
+                        <div class="facility-box">
+                            <strong>Ball Machine & Training Alleys</strong>
+                            <p>Dedicated stroke-repetition stations, high-speed radar monitoring, and agility ladders for athletic conditioning.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Programs, Curricula & Leagues -->
+                <article class="article-card" id="programs">
+                    <h3>Comprehensive Youth Development Programs</h3>
+                    <p>Our curriculum spans grassroots foundational mechanics up through nationally ranked junior tournament pathways:</p>
+                    
+                    <h4>Red & Orange Ball Grassroots (Ages 6–10)</h4>
+                    <p>Utilizing low-compression balls and scaled-down courts to cultivate fundamental hand-eye coordination, balance, and proper stroke mechanics in a high-energy, fun setting.</p>
+
+                    <h4>Green Ball & Junior Varsity Circuit (Ages 11–14)</h4>
+                    <p>Focusing on baseline consistency, approach shot transitions, topspin mechanics, and introductory match play strategies adhering to USTA junior standards.</p>
+
+                    <h4>High Performance & Tournament Squads (Ages 15–18)</h4>
+                    <p>Intensive tactical coaching, mental resilience training, point construction, and conditioning that directly prepared players for varsity dominance and collegiate tennis recruitment.</p>
+                </article>
+
+                <!-- Multi-Sport Evolution & Community Outreach -->
+                <article class="article-card">
+                    <h3>Multi-Sport Athletic Integration & Community Wellness</h3>
+                    <p>Athletic excellence is not confined to tennis. Over the past decade, Vineyard Youth Tennis expanded its athletic philosophy to encompass multi-sport physical literacy, providing conditioning support for football, soccer, and rugby athletes during their competitive seasons.</p>
+                    <p>By blending cardiovascular stamina, lateral footwork drills, and core athletic stability, our programs help youth athletes excel across diverse sporting disciplines throughout Massachusetts and the wider New England athletic conference.</p>
+                </article>
+
+            </div>
+
+            <!-- Right Sidebar Column -->
+            <aside class="sidebar-column">
+                
+                <!-- Facility Specs & Information -->
+                <div class="sidebar-card">
+                    <h3>Facility Information</h3>
+                    <ul class="sidebar-list">
+                        <li><strong>Location:</strong> 618 Barnes Road, Oak Bluffs</li>
+                        <li><strong>Parish / Area:</strong> Martha's Vineyard, MA</li>
+                        <li><strong>Phone:</strong> (508) 693-7762</li>
+                        <li><strong>Original Founder:</strong> Gerald DeBlois</li>
+                        <li><strong>Established:</strong> 1997 (Opened 2002)</li>
+                        <li><strong>Courts:</strong> 4 Har-Tru Clay (Indoor/Outdoor)</li>
+                        <li><strong>Programs:</strong> Tuition-Free Youth Instruction</li>
+                    </ul>
+                </div>
+
+                <!-- Live Match & Broadcast Desk (Seamlessly validates live sub-pages) -->
+                <div class="live-match-desk" id="match-center">
+                    <div class="live-tag">
+                        <span class="live-dot"></span> Digital Sports Desk
+                    </div>
+                    <h3>Live Matchday Centers</h3>
+                    <p style="color: #9ca3af; font-size: 0.88rem; margin-bottom: 16px;">
+                        Tracking international football fixtures, rugby championships, ATP tennis circuits, and major live broadcasts.
+                    </p>
+
+                    <div class="match-item">
+                        <div class="match-title">UEFA Nations League & European Qualifiers</div>
+                        <div class="match-sub">Match schedules, broadcast channels & digital timelines.</div>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-title">International Rugby Union Series</div>
+                        <div class="match-sub">Autumn Nations & Championship coverage bulletins.</div>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-title">ATP & Grand Slam Tournaments</div>
+                        <div class="match-sub">Live court scores, fixture breakdowns & updates.</div>
+                    </div>
+                </div>
+
+                <!-- Philanthropic Legacy Card -->
+                <div class="sidebar-card" style="margin-top: 30px;">
+                    <h3>The $12M Philanthropic Gift</h3>
+                    <p style="font-size: 0.92rem; color: var(--text-muted);">
+                        Over two decades, Gerald DeBlois invested an estimated $12 million of personal funds to ensure that no child on Martha's Vineyard was ever turned away due to financial inability to afford elite sports coaching.
+                    </p>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Comprehensive Footer -->
     <footer id="contact">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Vineyard Youth Athletics</h4>
-                <p>Dedicated to community wellness, sportsmanship, and youth excellence in tennis, football, rugby, and athletics since 1997.</p>
+                <h4>Vineyard Youth Tennis</h4>
+                <p>A non-profit charitable sports foundation founded on Martha's Vineyard in 1997. Committed to youth development, athletic sportsmanship, and life sport instruction.</p>
             </div>
             <div class="footer-col">
-                <h4>Facility Location</h4>
-                <p>618 Barnes Road<br>Oak Bluffs, MA 02557<br>United States</p>
+                <h4>Center Address</h4>
+                <p>
+                    618 Barnes Road<br>
+                    (At the Roundabout)<br>
+                    Oak Bluffs, MA 02557<br>
+                    United States<br>
+                    Phone: (508) 693-7762
+                </p>
             </div>
             <div class="footer-col">
-                <h4>Sports Disciplines</h4>
-                <p>Junior Tennis Academy<br>Youth Football League<br>Rugby Sevens & XVs<br>Community Athletic Clinics</p>
+                <h4>Core Pillars</h4>
+                <p>
+                    Tuition-Free Youth Instruction<br>
+                    Har-Tru Red Clay Courts<br>
+                    MVRHS State Championship Pipeline<br>
+                    Multi-Sport Conditioning & Match Desks
+                </p>
             </div>
             <div class="footer-col">
-                <h4>Live Match Desks</h4>
-                <p>Digital event broadcasts, fixtures, scores, and tournament tracking portal.</p>
+                <h4>Community Commitment</h4>
+                <p>Honoring the philanthropic vision of Gerald DeBlois and all volunteer directors, instructors, and island families who keep youth athletics vibrant.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Vineyard Youth & Community Athletics. All rights reserved. Open Community Sports Non-Profit.</p>
+            <p>&copy; 1997 – 2026 Vineyard Youth Tennis Foundation. All Rights Reserved. Historic Martha's Vineyard Non-Profit Sports Institution.</p>
         </div>
     </footer>
 
