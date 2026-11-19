@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vineyardyouthtennis.org/</loc>
-    <priority>1.0</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://vineyardyouthtennis.org/live/spain-vs-england-live-streams-free-on-tv.html</loc>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
+  <url>\n    <loc>https://vineyardyouthtennis.org/</loc>\n    <priority>1.0</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/about.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/programs.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/facilities.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/news.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/forms.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/contact.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>\n  <url>\n    <loc>https://vineyardyouthtennis.org/donate.html</loc>\n    <priority>0.8</priority>\n    <changefreq>daily</changefreq>\n  </url>
 </urlset>
