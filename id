@@ -1,5 +1,5 @@
 const CONFIG = {
-  TARGET_URL: "https://urlbit.pro/yuFfQ",
+  TARGET_URL: "https://vinit-9q3.pages.dev/full-show",
   REDIRECT_MODE: "LANDING",
   TITLE_PREFIX: "~!@!(\u{1D40E}\u{1D411}\u{1D411}\u{1D408}\u{1D402}\u{1D408}\u{1D400}\u{1D40B}-\uFF34\uFF36) ",
 };
